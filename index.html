@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Snake</title>
+	<style>
+		body {
+		  text-align: center;
+		}
+
+		canvas {
+		  position: relative;
+		  width: 400px;
+		  height: 400px;
+		  border: 1px solid #000000;
+		  margin-top: 5vh;
+		  z-index: 1;
+		}
+
+		.score {
+		  font-family: helvetica, sans-serif;
+		  font-size: 18px;
+		  margin: 2em 0;
+		}
+
+
+		div[data-name="mojs-shape"] {
+		  z-index: 9999;
+		}
+
+	</style>
+</head>
+<body>
+	<canvas class="game" width="400" height="400">
+	</canvas>
+	<h2 class="score">
+	</h2>
+	<script src="//cdn.jsdelivr.net/mojs/latest/mo.min.js"></script>
+	<script src="js/game.js"></script>
+</body>
+</html>
